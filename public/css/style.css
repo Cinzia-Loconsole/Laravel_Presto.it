@@ -1,0 +1,182 @@
+:root{
+
+    --primary: rgba(0, 148, 253, 0.54);
+    --secondary: #f1a0e8;
+    --accent: rgb(255, 253, 23) ;
+    --white: rgb(240, 255, 242);
+    --black: #040017;
+}
+
+body{
+    font-family: 'Delius', cursive;
+    color: whitesmoke;
+    background-color: #334f9ce9;
+    
+}
+
+.text-secondario{
+    color: var(--secondary);
+}
+
+.text-accento{
+    color: var(--accent);
+}
+
+.text-whiteCus{
+    color: var(--white);
+}
+
+.text-blackCus{
+    color: var(--black);
+}
+
+/* background */
+
+.bg-primario{
+    background-color: var(--primary);
+}
+
+.bg-secondario{
+    background-color: var(--secondary);
+}
+
+.bg-accento{
+    background-color: var(--accent);
+}
+
+.bg-whiteCus{
+    background-color: var(--white);
+}
+
+.bg-blackCus{
+    background-color: var(--black);
+}
+
+@font-face {
+    font-family:pick;
+    src: url(/img/PickandRoll.ttf);
+  } 
+
+.h1{
+    font-family:pick ;
+    font: size 300px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.sottotitolo{
+    font-family:pick ;
+    font: size 100px;
+    text-shadow: 3px 3px 5px black;
+}
+
+
+.head-txt {
+    margin-top: 250px;
+    
+}
+
+.fa-microphone-lines{
+    color:  #c8e3db;
+    text-shadow: 2px 2px 4px black;
+}
+
+.fa-magnifying-glass{
+color:whitesmoke;
+}
+
+.logoPink{
+    width: 60px;
+}
+
+.logoSky{
+    width: 60px;
+}
+
+
+header{
+    background: linear-gradient(100deg, rgba(68, 102, 123, 0.387), rgba(151, 154, 154, 0.267)), url('/img/bg-img.png');
+    background-position:top;
+   /* position: absolute; */
+   height: 100vh;
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.section2{
+    border-top: solid 10px rgba(13, 13, 13, 0.939);
+    /* background-color: #4a7d3d; */
+    
+}
+
+
+#nav1{
+    transition: 0.2s;
+}
+
+#containerNav{
+    transition: 0.2s;
+}
+
+.nav-link{
+    color:whitesmoke;
+}
+
+.nav-link:hover{
+    color:rgba(184, 220, 222, 0.979);
+    border-bottom: 2px solid yellow;
+}
+
+.shipper{
+
+    width: 400px;
+
+}
+
+/* SWIPER */
+
+.swiper {
+    height: 300px;
+  }
+
+  /* ANNUNCI */
+
+.m-filterSection{
+    margin-top: 200px;
+}
+
+.card-feedback{
+    height: 200px;
+    width: 300px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    background-color: whitesmoke;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* MOUSE ENTER */
+
+.col-custom{
+    color: rgba(13, 13, 13, 0.939);
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.col-custom:hover{
+    background-color: rgba(245, 245, 245, 0.816);
+    color: rgba(144, 109, 109, 0.939);
+    border:3px solid black;
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+.h-footer-cus{
+    min-height: 50px;
+}
