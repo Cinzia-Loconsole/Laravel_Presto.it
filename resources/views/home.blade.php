@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Presto</title>
 
-    <link rel="shortcut icon" href="./media/logo.png" type="imagine/x-icon">
+    <link rel="shortcut icon" href="/media/logo.png" type="imagine/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -18,8 +18,8 @@
   
     <!-- GOOGLE FONT CDN-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,17 +38,17 @@
 
           <!-- primo logo -->
           <a class="navbar-brand" href="#">
-            <img class=" ms-3 mt-2 logoPink" src="/img/logo.png" alt="" srcset="">
+            <img class=" ms-3 mt-2 logoPink " src="/img/presto.png" alt="" srcset="">
           </a>
 
            <!-- secondo logo -->
-          <a class="navbar-brand logoSky d-none" href="#">
-            <img class=" img-fluid" src="/img/logoSky.png" alt="Logo del Sito">
+          <a class="navbar-brand  d-none" href="#">
+            <img class=" img-fluid logoSky" src="/img/presto.png" alt="Logo del Sito">
           </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             
-                <i class=" toggleri fa-2x fa-solid fa-microphone-lines"></i>
+            <img src="/img/gamei.png" class=" toggleri fa-microphone-lines"alt="" srcset="">
             
 
           </button>
@@ -66,10 +66,14 @@
             </ul>
 
             <!-- CERCA -->
-            <form class="d-flex" role="search">
-                <input class=" ms-2 form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-                <button class="btn btn-Custom text-whiteCus" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
+            <form>
+              <div class="search-wrapper">
+                <input class="search-input" type="text" placeholder="Search"/><i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+
+
+         
         </div>
       </nav>
 
@@ -82,9 +86,9 @@
     
             <div class="col-12 text-center head-txt">
     
-                <h1 class="fw-bold h1">PRESTO <span class="h1 fw-bold">.IT</span></h1>
+               <img class="prestopresto" src="/img/presto.png" alt="" srcset="">
         
-                <h3 class="mt-4 sottotitolo">L'e-commerce degli strumenti musicali</h3>
+                {{-- <h3 class="mt-4 sottotitolo">Lo shopping online 🛒</h3> --}}
                     
                 </div>
     
@@ -99,7 +103,7 @@
 
         <div class="row mt-5">
 
-          <h2 class="text-center"> Numeri Spaziali </h2>
+          <h2 class="text-center"> Le nostre consegne </h2>
 
           <div class="col-12 col-md-6 d-flex justify-content-center">
 
@@ -109,13 +113,13 @@
           
           <div class="col-md-6 col-12 text-center d-flex flex-column align-content-center justify-content-center">
   
-            <h2>Un pò di numeri</h2>
+            {{-- <h2>Un pò di numeri</h2> --}}
   
-            <p> <span class="numero" id="primoSpan">0</span> Clienti soddisfatti</p>
+            <p> <span class="numero h3 h3" id="primoSpan">0</span> Clienti soddisfatti</p>
   
-            <p> <span class="numero" id="secondoSpan">0</span> Prodotti venduti</p>
+            <p> <span class="numero h3" id="secondoSpan">0</span> Prodotti venduti</p>
   
-            <p> <span class="numero" id="terzoSpan">0</span> Recensioni</p>
+            <p> <span class="numero h3" id="terzoSpan">0</span> Recensioni</p>
   
           </div>
   
@@ -126,7 +130,7 @@
 
     <section class="container my-5 py-5" id="diconoDiNoi">
       <div class="row justify-content-center">
-        <h2 class="text-center">Dicono di Noi</h2>
+        <h2 class="text-center mb-5">Dicono di Noi</h2>
         <div class="col-12 col-md-8">
 
           <!-- Slider main container -->
@@ -157,26 +161,30 @@
 
       <!-- FINE SWIPER -->
 
+      <div class="container-fluid d-flex justify-content-center">
+        {{-- <div class="row justify-content-center">
+          <div class="col-12 col-md-6"> --}}
+            <img src="/img/banner.jpg" alt="" srcset="">
+          </div>
+        {{-- </div>
+      </div> --}}
+        
+
       <!-- MOUSE ENTER -->
 
-      <section class="container-fluid my-5 bg-primario" id="domandeFrequenti">
+      <section class="container my-5 d-flex justify-content-center" id="domandeFrequenti">
         <div class="row justify-content-evenly">
-        <h2 class="text-center my-3">Domande frequenti</h2>
+        <h2 class="text-center my-5">In evidenza</h2>
 
-          <div class="col-8 col-md-3 col-custom">
-            <i class="fa-solid fa-circle-question fa-2x text-accento"></i>
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, adipisci.</p>
+          <div class="col-8 col-md-3 ">
+          
+          <img class="col-custom" src="/img/promo.jpg" alt="">
           </div>
-          <div class="col-8 col-md-3 col-custom">
-            <i class="fa-solid fa-circle-question fa-2x text-accento"></i>
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, adipisci.</p>
+          <div class="col-8 col-md-3 ">
+            <img class="col-custom" src="/img/promo2.jpg" alt="">
           </div>
-          <div class="col-8 col-md-3 col-custom">
-            <i class="fa-solid fa-circle-question fa-2x text-accento"></i>
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, adipisci.</p>
+          <div class="col-8 col-md-3 mb-5 ">
+            <img class="col-custom" src="/img/promo3.jpg" alt="">
           </div>
 
         </div>
@@ -185,7 +193,7 @@
 
       <!-- INIZIO FOOTER -->
 
-    <footer class="container-fluid mt-5 bg-blackCus ">
+    <footer class="container-fluid mt-3 bg-blackCus ">
       
       <div class="container">
 
@@ -194,10 +202,16 @@
           <div class="col-12 col-md-4 text-center my-5">
 
            <p class="h2 text-accento">About Presto</p>
-           <p class="my-3 text-primario">P.IVA: 1234567</p>
-           <p class="my-3 text-primario">Indirizzo: Strada San Giorgio Martire, 2D</p>
-           <p class="my-3 text-primario">Tel. 3468889234</p>
-           <p class="my-3 text-primario">e-mail: miamail@sempremailmia.it</p>
+           <p class="my-3 text-white">P.IVA: 1234567</p>
+           <p class="my-3 text-white">
+            <i class="fa-solid fa-location-dot"></i>
+            Strada San Giorgio Martire, 2D</p>
+           <p class="my-3 text-white">
+            <i class="fa-solid fa-phone"></i>
+            3468889234</p>
+           <p class="mb-3 text-white">
+            <i class="fa-solid fa-envelope"></i>
+             assistenza@presto.it</p>
 
            <div>
 
@@ -217,9 +231,9 @@
             <p class="h2 text-accento">Quick Menu</p>
 
             <div class="d-flex flex-column justify-content-center h-75">
-              <a href="#numeriSpaziali"><p> Numeri Spaziali </p> </a>
-              <a href="#diconoDiNoi"><p> Dicono di Noi </p> </a>
-              <a href="#domandeFrequenti"><p> Domande Frequenti </p> </a>
+              <a href="#numeriSpaziali" class="text-white"><p> Le nostre consegne </p> </a>
+              <a href="#diconoDiNoi" class="text-white"><p> Dicono di Noi </p> </a>
+              <a href="#domandeFrequenti" class="text-white"><p>In evidenza </p> </a>
             </div>
 
  
@@ -228,11 +242,16 @@
 
            <div class="col-12 col-md-4 text-center my-5">
 
-            <p class="h2 text-accento"> Collabs </p>
+            <p class="h2 text-accento mb-5"> Servizi </p>
             
-            <p class="text-primario">Amazon</p>
-            <p class="text-primario">Disney</p>
-            <p class="text-primario">Squelli</p>
+
+            <div class="d-flex flex-column justify-content-center">
+
+            <a href="" class="text-white mb-3">Traccia il tuo ordine </a>
+            <a href="" class="text-white mb-3">Verifica validità</a>
+              <a href="" class="text-white">Ritiro Usato</a>
+
+            </div>
 
            </div>
 
@@ -242,7 +261,7 @@
         <div class="row bg-dark">
           <div class="col-12 my-2">
 
-            <h6 class="text-whiteCus text-center">tutti i diritti riservati a reietto® master Pokémon</h6>
+            <h6 class="text-whiteCus text-center">Tutti i diritti riservati a Presto® </h6>
 
           </div>
         </div>
@@ -272,10 +291,10 @@
     <script> 
     
     let feedback = [
-      {name: 'Valerio' , quote: 'Il sito più bello che abbia mai visto'},
-      {name: 'Kadijia' , quote: 'La pizza era fredda'},
-      {name: 'Adriano' , quote: 'Il più affidabile del webbe'},
-      {name: 'ChariCoez' , quote: 'Swiper è bello, ma con te un pò di più'},
+      {name: 'Paolo' , quote: 'Competenti in materia, hanno sempre i migliori prezzi sul mercato. Affidabili anche nelle consegne sempre puntuali e precisi, non manca mai nulla.'},
+      {name: 'Marco' , quote: 'Sono molto soddisfatto del mio acquisto, ho comprato la PS4 al miglior prezzo, ricevuta dopo soli 2 giorni. Bravissimi, ben forniti e ottime informazioni su qualsiasi prodotto.'},
+      {name: 'Francesca' , quote: 'Unico punto di riferimento per gli appassionati di videogiochi, non esiste giocatore che non lo conosca, ci sarà un motivo!'},
+      {name: 'Alessandro' , quote: 'Personale gentilissimo, cortese. Ci troviamo molto bene. Sempre disponibili e in gamba!'},
     ]
 
     let swiperWrapper = document.querySelector('.swiper-wrapper');

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- COLLEGAMENTO CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
@@ -52,10 +52,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="/">Home</a>
+                  <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                 </li>
               <li class="nav-item">
-                <a class="nav-link" href="/annunci">Annunci</a>
+                <a class="nav-link" href="#">Annunci</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Chi siamo</a>
@@ -66,6 +66,7 @@
             <form class="d-flex" role="search">
                 <input class=" ms-2 form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
                 <button class="btn btn-Custom text-whiteCus" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
           </div>
         </div>
       </nav>
@@ -82,52 +83,65 @@
            <p class="h3"> Filtra per:</p>
 
            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <!-- FILTRO PER CATEGORIA -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                 <p>Categoria</p> 
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseValerio1" aria-expanded="false" aria-controls="flush-collapseValerio1">
+                    <p>Categoria</p>
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+              <div id="flush-collapseValerio1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionValerio">
 
                 <div id="categoryWrapper" class="accordion-body">
-                    
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="All" id="flexRadioDefault1">
-                        <label class="form-check-label" for="All" checked>
+                  <div class="form-check">
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="All" checked >
+
+                        <label class="form-check-label" for="All">
                           Tutte le categorie
                         </label>
-                      </div>
-                      
-                      </div>
+
                     </div>
-                <div>
+                  </div>
+
               </div>
             </div>
+            <!-- FILTRO PER PREZZO -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseValerio2" aria-expanded="false" aria-controls="flush-collapseTwo">
                  <p>Prezzo</p>
                 </button>
               </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div id="flush-collapseValerio2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionValerio">
                 
                 <div class="accordion-body">
-                    
-                  <label for="customRange1" id="numeroIncremento" class="form-label">0</label>
-                              <input type="range" class="form-range" id="priceInput">
+                   
+                  <input type="range" class="form-range" id="priceInput"> 
+                  
+                  <div class="d-flex align-items-center justify-content-between">
+                  <span class="numeroIncremento" id="numeroIncremento">
+                      0
+                  </span>
+
+                  <span class="me-5 euro">€</span>
+                              
 
                 </div>
 
               </div>
             </div>
+            </div>
+
+            <!-- FILTRO PER PAROLA -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                  <p>Parola</p> 
                 </button>
               </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionValerio">
                 <div class="accordion-body">
 
                   <input class="form-control me-2" id="ricerca" type="search" placeholder="Inserisci la parola da cercare" aria-label="Search">
